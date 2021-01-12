@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body id="contact">
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo_v_c.svg" alt="">
+      </div>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="">ホーム</a></li>
+          <li><a href="">公演カレンダー</a></li>
+          <li><a href="">チケットオンライン</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="wrap">
+    <div class="middle-container">
+      <div class="required-notice">
+        <span class="required">※</span>印は必ずご記入ください。
+      </div>
+      <form action="">
+        <table class="contact-form-table">
+          <tr>
+            <th>お問い合わせの種類<span class="required">※</span></th>
+            <td>
+              <select name="" id="">
+                <option value="" selected>お問い合わせの種類をお選びください</option>
+                <option value="">施設について</option>
+                <option value="">公演について</option>
+                <option value="">チケットについて</option>
+                <option value="">その他</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>お問い合わせ内容<span class="required">※</span></th>
+            <td><input type="textarea" id="content"></td>
+          </tr>
+          <tr>
+            <th>氏名<span class="required">※</span></th>
+            <td><input type="text" class="textfield" id="name"></td>
+          </tr>
+          <tr>
+            <th>フリガナ<span class="required">※</span></th>
+            <td>
+              <input type="text" class="textfield" id="rubi"><br>
+              <small>半角カナは使用しないでください。</small>
+            </td>
+          </tr>
+          <tr>
+            <th>メールアドレス<span class="required">※</span></th>
+            <td>
+              <input type="text" class="textfield" id="email"><br>
+              <small>半角英数で記入してください。お間違えのないよう、ご確認ください。</small>
+            </td>
+          </tr>
+          <tr>
+            <th>メールアドレス(確認)<span class="required">※</span></th>
+            <td>
+              <input type="text" class="textfield" id="email_conf"><br>
+              <small>確認のため再度入力してください</small>
+            </td>
+          </tr>
+          <tr>
+            <th>郵便番号</th>
+            <td>〒<input type="text" class="yubin" maxlength="3" id="yubin-left">-
+                  <input type="text" class="yubin" maxlength="4" id="yubin-right">
+                  <button class="yubin-button">住所検索</button><br>
+                  <small>半角英数で記入してください。</small>
+            </td>
+          </tr>
+          <tr>
+            <th>住所</th>
+            <td>
+              <table class="pref-field-table">
+                <tr>
+                  <th>都道府県</th>
+                  <td>
+                    <select name="" id="pref">
+                      <option value="">お選びください</option>
+                      <option value="">北海道</option>
+                      <option value="">東京</option>
+                      <option value="">京都</option>
+                      <option value="">それ以外</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>市区町村</th>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <th>番地など</th>
+                  <td><input type="text"></td>
+                </tr>
+                <tr>
+                  <th>ビル名など</th>
+                  <td><input type="text"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <th>電話番号</th>
+            <td>
+              <input type="text" class="tel-text">-
+              <input type="text" class="tel-text">-
+              <input type="text" class="tel-text"><br>
+              <small>半角英数で記入してください。</small>
+            </td>
+          </tr>
+          <tr>
+            <th></th>
+            <td><button class="confirm-button">確認画面へ</button></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

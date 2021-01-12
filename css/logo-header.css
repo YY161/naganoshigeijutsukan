@@ -1,0 +1,40 @@
+header {
+  padding: 10px 0;
+}
+
+header .container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header .logo {
+  float: left;
+}
+
+header .logo img {
+  width: 160px;
+}
+
+header .global-nav {
+  float: right;
+  margin-top: 40px;
+}
+
+header .global-nav li {
+  display: inline-block;
+  margin: 0 30px;
+  font-size: 17px;
+}
+
+header .global-nav a {
+  text-decoration: none;
+  color: #9f494e;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+header:after {
+  display: block;
+  clear: both;
+  content: "";
+}
